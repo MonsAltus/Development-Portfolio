@@ -1,0 +1,170 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: slategrey;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: lightblue;
+    margin: 0px 0 10px;
+    border: steelblue solid 7px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover,
+footer a:hover {
+    color: steelblue;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+h4 {
+    margin-bottom: 3px;
+}
+
+nav ul {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: inline-flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+main {
+padding-top: 100px;
+}
+
+#img-me {
+    height: 400px;
+    width: auto;
+    float: left;
+    margin: 0 20px;
+}
+
+article {
+    margin: 15px 1%;
+    background-color: lightblue;
+    border: steelblue solid 7px;
+}
+
+#about-me {
+    height: 490px;
+    /* margin: 1px; */
+}
+
+#about-me p {
+    /* margin: 10px; */
+}
+
+#pic-credit {
+    position: relative;
+    top: 240px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    columns: 2;
+}
+
+span {
+    background-color: steelblue;
+}
+
+section a {
+    height: 300px;
+    border: steelblue solid 7px;
+    margin: 20px 0px;
+}
+
+.primary-project {
+    width: 80%;
+    background-size: cover;
+    background-position:center;
+}
+
+.secondary-project {
+    display: flex;
+    width: 35%;
+    background-size: cover;
+    background-position:center;
+}
+
+/* Project anchor image backgrounds  */
+#landing-page {
+    background-image: url(../images/landing-page.png);
+}
+#calculator {
+    background-image: url(../images/calculator.jpg);
+}
+#time-machine {
+    background-image: url(../images/time-machine.png);
+}
+#perp-motion {
+    background-image: url(../images/perp-motion.jpg);
+}
+#something-else {
+    background-image: url(../images/something-else.jpg);
+}
+
+footer {
+    margin: 15px 1%;
+    background-color: lightblue;
+    /* text-align: center */
+    border: steelblue solid 7px;
+}
+
+footer ul {
+    display: inline-flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+footer li {
+    /* Spaces each list element horizontally  */
+    margin: 10px 15px;
+}
+
+@media screen and (max-width: 840px) {
+    .primary-project,
+    .secondary-project {
+        /* columns: 1; */
+    }
+
+    header {
+        /* margin: 0px 0 30px; */
+        padding-bottom: 25px;
+    }
+
+    nav ul {
+        top: 75px;
+        right: unset;
+    }
+
+    footer ul {
+        display: unset;
+    }
+
+}

@@ -1,2 +1,14 @@
 # Development-Portfolio
-Professional portfolio for web development projects.
+## Professional portfolio for web development projects.
+
+### Description:
+This page is a concept for a portfolio of my personal projects. Most of the links are currently uncreative placeholders but will be updated as I complete more projects to display.
+My understanding and grasp of resposive development concepts like Flex and Grid need considerable work.
+
+### Links:
+[Website preview](./assets/images/screenshot.png)<br>
+[Link to deployed website]()
+
+### Changelog:
+#### index.html:
+#### style.css:
