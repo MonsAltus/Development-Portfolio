@@ -14,11 +14,13 @@ header {
     border: steelblue solid 7px;
 }
 
+/* Removes underscore from anchor links  */
 a {
     text-decoration: none;
     color: black;
 }
 
+/* Anchor links change color when hovered over  */
 nav a:hover,
 footer a:hover {
     color: steelblue;
@@ -34,10 +36,13 @@ h3 {
     margin: 10px;
 }
 
+/* Adds spacing in project description headings so the second line with the <p> element doesn't occlude text. */
 h4 {
-    margin-bottom: 3px;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
 }
 
+/* Fixes nav bar in top right under default viewport size */
 nav ul {
     position: absolute;
     top: 15px;
@@ -51,10 +56,12 @@ nav li {
     margin: 0 15px;
 }
 
+/* Spaces main content down so it's not covered by the header. */
 main {
 padding-top: 100px;
 }
 
+/* Sets sizing and placement of picture in "About Me"  */
 #img-me {
     height: 400px;
     width: auto;
@@ -68,48 +75,55 @@ article {
     border: steelblue solid 7px;
 }
 
+/* Sets "About Me" height to encompass photo  */
 #about-me {
     height: 490px;
-    /* margin: 1px; */
 }
 
 #about-me p {
-    /* margin: 10px; */
+    margin: 80px 50px 80px 50px;
 }
 
+/* Hacky way of placing photo credit at bottom of pictures */
 #pic-credit {
     position: relative;
-    top: 240px;
+    top: 225px;
 }
 
+/* Sets the project images to wrap and space cleanly */
 section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    columns: 2;
 }
 
+/* Hacky way of giving the project descriptions a background for legibility */
 span {
     background-color: steelblue;
 }
 
+/* sets sizing and background positioning for project images */
 section a {
     height: 300px;
     border: steelblue solid 7px;
     margin: 20px 0px;
-}
-
-.primary-project {
-    width: 80%;
     background-size: cover;
     background-position:center;
+}
+
+/* Changes cursor to hand pointer to show porject images are interactive */
+section a:hover {
+    cursor: pointer;
+}
+
+/* sets first project image as larger than the others  */
+.primary-project {
+    width: 80%;
 }
 
 .secondary-project {
     display: flex;
     width: 35%;
-    background-size: cover;
-    background-position:center;
 }
 
 /* Project anchor image backgrounds  */
@@ -147,15 +161,14 @@ footer li {
     margin: 10px 15px;
 }
 
+/* Adjusts nav ul and footer ul and corresponding element padding and margins  */
 @media screen and (max-width: 840px) {
-    .primary-project,
-    .secondary-project {
-        /* columns: 1; */
+    header {
+        padding-bottom: 25px;
     }
 
-    header {
-        /* margin: 0px 0 30px; */
-        padding-bottom: 25px;
+    main {
+    margin-top: 125px;
     }
 
     nav ul {
@@ -166,5 +179,4 @@ footer li {
     footer ul {
         display: unset;
     }
-
 }
