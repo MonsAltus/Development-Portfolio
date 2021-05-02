@@ -103,7 +103,16 @@ span {
 }
 
 /* sets sizing and background positioning for project images */
-section a {
+/* section a {
+    height: 300px;
+    border: steelblue solid 7px;
+    margin: 20px 0px;
+    background-size: cover;
+    background-position:center;
+} */
+
+.primary-project,
+.secondary-project{
     height: 300px;
     border: steelblue solid 7px;
     margin: 20px 0px;
@@ -111,9 +120,12 @@ section a {
     background-position:center;
 }
 
+
+
 /* Changes cursor to hand pointer to show porject images are interactive */
 section a:hover {
     cursor: pointer;
+    color: gold;
 }
 
 /* sets first project image as larger than the others  */
@@ -127,21 +139,21 @@ section a:hover {
 }
 
 /* Project anchor image backgrounds  */
-#landing-page {
-    background-image: url(../images/landing-page.png);
+#farmers-market {
+    background-image: url(../images/farmers-market.png);
 }
-#calculator {
-    background-image: url(../images/calculator.jpg);
+#weather-dashboard {
+    background-image: url(../images/weather-dash.png);
 }
-#time-machine {
-    background-image: url(../images/time-machine.png);
+#day-planner {
+    background-image: url(../images/day-planner.png);
 }
-#perp-motion {
+/* #perp-motion {
     background-image: url(../images/perp-motion.jpg);
 }
 #something-else {
     background-image: url(../images/something-else.jpg);
-}
+} */
 
 footer {
     margin: 15px 1%;
