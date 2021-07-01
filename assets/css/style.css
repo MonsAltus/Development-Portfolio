@@ -148,12 +148,13 @@ section a:hover {
 #day-planner {
     background-image: url(../images/day-planner.png);
 }
-/* #perp-motion {
-    background-image: url(../images/perp-motion.jpg);
+#employee-tracker {
+    background-image: url(../images/employee-tracker.png);
 }
-#something-else {
-    background-image: url(../images/something-else.jpg);
-} */
+#readme-generator {
+    background-image: url(../images/readme-generator.png);
+}
+
 
 footer {
     margin: 15px 1%;
